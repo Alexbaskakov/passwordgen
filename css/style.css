@@ -1,0 +1,227 @@
+
+.backwrap{
+	background: #113243;
+	background-image:url("https://i.postimg.cc/s2Y19TPd/pixil-frame-0-2.png");
+
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+  }
+  
+  img{
+	left: 0.5%;
+	bottom: 0;
+	opacity: 1;
+	width: 300px;
+	background-position: fixed;
+  }
+
+
+  .back-shapes {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .back-shapes img {
+	opacity: 0.2;
+	position: absolute;
+	width: 1.5%;
+  }
+  
+  .floating {
+	position: absolute;
+	animation-name: floating;
+	-webkit-animation-name: floating;
+	animation-duration: 5s;
+	-webkit-animation-duration: 5s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+  }
+  .floating.circle {
+	display: inline-block;
+	width: 170px;
+	height: 170px;
+	background-image: url("https://i.postimg.cc/tg5qJtfC/pixil-frame-0-2.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: 0.5;
+  }
+  .floating.square {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background-image: url("https://i.postimg.cc/K37j3T9m/630a2cf2.cc/tg5qJtfC/pixil-frame-0-2.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: 0.5;
+  }
+
+
+  .floating.triangle {
+	
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-image: url("https://i.postimg.cc/g0m6f0Xs/pixil-frame-0-5.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: 0.5;
+  }
+  .floating.cross {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-image: url("https://i.postimg.cc/tg5qJtfC/pixil-frame-0-2.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: 0.5;
+  }
+  
+  @keyframes floating {
+	0% {
+	  transform: translateY(0%) rotate(-55deg);
+	}
+	50% {
+	  transform: translateY(300%) rotate(55deg);
+	}
+	100% {
+	  transform: translateY(0%) rotate(-55deg);
+	}
+  }
+  @-webkit-keyframes floating {
+	0% {
+	  -webkit-transform: translateY(0%);
+	}
+	50% {
+	  -webkit-transform: translateY(300%);
+	}
+	100% {
+	  -webkit-transform: translateY(0%);
+	}
+  }
+
+
+
+
+
+
+  @font-face { 
+    font-family: "ComfortaaLight";
+    src: url("../fonts/ComfortaaLight/ComfortaaLight.eot");
+    src: url("../fonts/ComfortaaLight/ComfortaaLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ComfortaaLight/ComfortaaLight.woff") format("woff"),
+    url("../fonts/ComfortaaLight/ComfortaaLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face { 
+    font-family: "PressStart2PRegular";
+    src: url("../fonts/PressStart2PRegular/PressStart2PRegular.eot");
+    src: url("../fonts/PressStart2PRegular/PressStart2PRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PressStart2PRegular/PressStart2PRegular.woff") format("woff"),
+    url("../fonts/PressStart2PRegular/PressStart2PRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+
+
+
+  body {
+	
+	  background-size: cover;
+	  height: 100vh;
+	  padding:0;
+	  margin:0;
+	  color: white;
+	  font-family: "ComfortaaLight"; 
+	  text-align: center;
+	  
+	
+		  }
+  
+		  h1 {
+			
+			margin-top: 20px;
+			font-family: "PressStart2PRegular";
+			  font-weight: 700; 
+			  color: white;
+			  font-size: 36px;
+			  text-align: center;
+			  text-shadow: 2px 2px black;
+		
+		  }
+		  label {
+			font-family: "ComfortaaLight"; 
+			  color: white;
+			  font-size: 24px;
+			  text-shadow: 2px 2px black;
+			  display: block;
+			  margin-top: 20px;
+		text-align: center;
+		  }
+		  input[type=number] {
+			font-family: "ComfortaaLight"; 
+			  font-size: 24px;
+			  padding: 8px;
+		
+		  }
+		  input[type=button] {
+			
+			  font-size: 24px;
+			  padding: 8px;
+			  background-color: white;
+			  color: rgb(32, 103, 255);
+			  border-radius: 8px;
+			  box-shadow: 2px 2px black;
+			  margin-top: 20px;
+			  font-family: "ComfortaaLight"; 
+		text-align: center;
+		  }
+		  input[type=text] {
+			text-align: center;
+			font-family: "ComfortaaLight";
+			  font-size: 24px;
+			  padding: 8px;
+			  width: 500px;
+			  animation-duration: 2s;
+			  animation-name: fadeIn;
+			  animation-fill-mode: forwards;
+			  animation-timing-function: ease-in-out;
+			  animation-delay: 0s;
+			  animation-iteration-count: initial;
+			  animation-direction: normal;
+			  animation-play-state: running;
+			  animation-direction-reverse:none;
+			  animation-direction-alternate:none;
+			  animation-direction-alternate-reverse:none;
+			  animation-direction-normal:none;
+			  animation-fill-mode:both;
+			  animation-play-state-running:none;
+			  animation-play-state-paused:none;
+			  animation-timing-function-ease:none;
+			  animation-timing-function-ease-in:none;
+			  animation-timing-function-ease-in-out:none;
+			  animation-timing-function-ease-out:none;
+			  animation-timing-function-linear:none;
+			  animation-timing-function-step-end:none;
+			  animation-timing-function-step-start:none;
+			  backface-visibility:hidden;
+			  will-change:auto;}
+		  @keyframes fadeIn {
+			from {opacity: 0;}
+			to {opacity: 1;}
+		  }
